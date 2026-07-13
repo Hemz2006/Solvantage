@@ -11,7 +11,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<script src="./assets/image-slot.js"></script>
 <style>
   *{box-sizing:border-box}
   html{scroll-behavior:smooth}
@@ -83,7 +82,8 @@
       </div>
       <div data-reveal="1" style="position:relative">
         <div style="position:relative;border-radius:22px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.4);border:1px solid rgba(255,255,255,.14);aspect-ratio:4/5">
-          <image-slot id="hero-solar" shape="rect" placeholder="Drop a solar farm / team photo"></image-slot>
+          <img src="./assets/solar-field.png" alt="Solar panel array under a bright sky" style="width:100%;height:100%;object-fit:cover;display:block" />
+          <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(14,44,78,0) 55%,rgba(11,35,64,.35) 100%)"></div>
         </div>
         <div style="position:absolute;bottom:-22px;left:-22px;background:#fff;color:#16232e;border-radius:16px;padding:16px 20px;box-shadow:0 18px 40px rgba(0,0,0,.28);animation:floaty 5s ease-in-out infinite">
           <div style="font-size:12px;color:#5b6b78;font-weight:600;letter-spacing:.4px">EST. ANNUAL OUTPUT</div>
@@ -197,8 +197,15 @@
           <p style="font-size:17px;line-height:1.65;color:#eaf6df;max-width:520px;margin:0 0 26px">From engineering and operations to project delivery, our team proves that the future of energy is inclusive — and exceptionally well run.</p>
           <a onClick="{{ goAbout }}" style="display:inline-block;padding:13px 26px;background:#fff;color:#3c7d24;font-weight:700;border-radius:11px;cursor:pointer" style-hover="background:#0e2c4e;color:#fff">Learn more about us →</a>
         </div>
-        <div style="position:relative;min-height:300px">
-          <image-slot id="team-teaser" shape="rect" placeholder="Drop a plant / team photo"></image-slot>
+        <div style="position:relative;min-height:300px;overflow:hidden;background:linear-gradient(150deg,#3c7d24,#2f6b1c)">
+          <div style="position:absolute;top:-40px;right:-30px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.22),transparent 68%)"></div>
+          <div style="position:absolute;bottom:-50px;left:-30px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(11,35,64,.28),transparent 70%)"></div>
+          <div style="position:absolute;inset:0;background-image:repeating-linear-gradient(115deg,rgba(255,255,255,.06) 0 2px,transparent 2px 22px)"></div>
+          <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
+            <div style="width:60%;max-width:230px;aspect-ratio:1/1;background:#fff;border-radius:24px;box-shadow:0 20px 50px rgba(11,35,64,.28);display:flex;align-items:center;justify-content:center;padding:22px">
+              <img src="./assets/logo-mark.jpeg" alt="Solvantage Energy" style="width:100%;height:100%;object-fit:contain;display:block" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -223,8 +230,8 @@
         <p style="font-size:17px;line-height:1.7;color:#4a5a67;margin:0 0 16px">Solvantage Energy Systems Private Limited is a Hyderabad-based solar power company operating a 2&nbsp;MW generation plant near the city. We design, build, and operate high-efficiency solar assets for private and government enterprises.</p>
         <p style="font-size:17px;line-height:1.7;color:#4a5a67;margin:0">What sets us apart is simple: we are entirely women-led. Our engineers, operators, and project leads bring precision and accountability to every megawatt we deliver — proving that clean energy and inclusive leadership go hand in hand.</p>
       </div>
-      <div data-reveal="1" style="border-radius:22px;overflow:hidden;aspect-ratio:5/4;box-shadow:0 24px 54px rgba(20,58,99,.16)">
-        <image-slot id="about-plant" shape="rect" placeholder="Drop a plant / site photo"></image-slot>
+      <div data-reveal="1" style="position:relative;border-radius:22px;overflow:hidden;aspect-ratio:5/4;box-shadow:0 24px 54px rgba(20,58,99,.16)">
+        <img src="./assets/solar-desert.jpg" alt="Utility-scale solar farm" style="width:100%;height:100%;object-fit:cover;display:block" />
       </div>
     </div>
   </section>
